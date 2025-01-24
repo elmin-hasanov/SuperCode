@@ -1,0 +1,22 @@
+body section h1 {
+    background-color: #4DD0E1;
+}
+
+section {
+    background-color: #A5D6A7;
+}
+section p {
+    background-color: #C5CAE9;
+}
+body article {
+    background-color: #F48FB1;
+}
+body article h2 {
+    background-color: #7986cb;
+}
+body article p {
+    background-color: #ff8a65;
+}
+button {
+    background-color: #304FFE;
+}

@@ -1,0 +1,28 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+  }
+
+body {
+    background-image: url(./img/photo-1737405555489-78b3755eaa81.avif);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+p {
+    color: white;
+    background-color: rgba(247, 173, 0, 0.5); 
+    padding: 20px;
+    font-size: 2vw;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}

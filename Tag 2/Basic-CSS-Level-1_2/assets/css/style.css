@@ -1,0 +1,14 @@
+h2 {
+    text-align: center;
+    font-size: 16px;
+}
+h1 {
+    text-align: center;
+    color: rgb(101, 20, 20)
+}
+h3 {
+    background-color: lightgray
+}
+p span {
+    font-style: italic
+}

@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: grey;
+    font-family: Tahoma;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px black;
+    padding: 10px;
+    font-size: clamp(1.5rem, 3vw, 10rem);
+    margin-bottom: 20px;
+}
+
+.p1 {
+    font-family: Lucida Sans Unicode;
+    text-indent: 50px;
+    word-spacing: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.p2 {
+    text-indent: 60px;
+    word-spacing: 0px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+h2 {
+    text-shadow: 2px 2px black;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.p3 {
+    line-height: 120%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: grey;
+    color: black;
+}
+
+.p4 {
+    line-height: 120%;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}

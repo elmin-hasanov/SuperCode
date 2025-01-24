@@ -1,0 +1,24 @@
+header nav {
+    background-color: grey;
+}
+
+header nav li a {
+    color: red;
+}
+
+.bild1 {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.bild2 {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+}
+.bild3 {
+    width: 800px;
+    height: 800px;
+    object-fit: cover;
+}
