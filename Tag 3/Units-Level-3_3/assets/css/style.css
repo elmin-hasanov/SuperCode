@@ -22,7 +22,7 @@ body {
 
 header .logooben {
   display: inline-block;
-  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 15px;
   color: #949494;
   font-size: 17.6px;
@@ -30,7 +30,13 @@ header .logooben {
 }
 
 header {
-  background: #333;
+  text-align: right; 
+
+  background-image: url(../img/header.png);
+  background-size: cover; /* Hintergrundbild skalieren, um den gesamten Bereich zu füllen */
+  background-position: center; /* Zentriert das Bild */
+  background-repeat: no-repeat; /* Verhindert das Wiederholen des Bildes */
+  background-color: #333;
   height: 100vh;
 }
 
@@ -45,12 +51,12 @@ header {
   padding: 0px 0px 20px 0px;
   border-radius: 8px 8px 8px 8px;
   color: white;
-  background: linear-gradient(36deg, rgba(255,0,210,1) 0%, rgba(52,52,250,1) 50%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(36deg, rgba(255,0,210,0.5) 0%, rgba(52,52,250,0.5) 50%, rgba(0,212,255,0.5) 100%);
   transition: background 0.3s ease;
 }
 
 .logo:hover {
-  background: linear-gradient(36deg, rgba(0,255,210,1) 0%, rgba(252,52,250,1) 50%, rgba(0,122,255,1) 100%);
+  background: linear-gradient(36deg, rgba(0,255,210,0.5) 0%, rgba(252,52,250,0.5) 50%, rgba(0,122,255,0.5) 100%);
 }
 
 .logo h2 {
@@ -76,7 +82,8 @@ nav {
 }
 
 nav li {
-  text-align: right;
+  text-align: left;
+  margin-left: 15px;
   padding: 9px;
 }
 
