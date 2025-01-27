@@ -85,6 +85,7 @@ nav li {
   text-align: left;
   margin-left: 15px;
   padding: 9px;
+  list-style-type: none;
 }
 
 nav a {

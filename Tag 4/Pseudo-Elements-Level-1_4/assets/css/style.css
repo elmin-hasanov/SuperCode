@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+section {
+  margin-top: 5px;
+  margin-left: 5px;
+  display: inline-block;
+  border: 1px solid yellow;
+}
+
+p::selection {
+  color: rgb(245, 220, 0);
+}
+
+p::before{
+  content: "Info";
+  color: rgb(0, 0, 0);
+  background-color: yellow;
+}
+p::after{
+  content: " \2665";
+  color: red;
+}
