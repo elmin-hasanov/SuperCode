@@ -13,7 +13,7 @@
      --text-gray: #606060;
  }
 
- .wrapper {
+ .wrapper , .main , .section {
      background-color: #F5F5F5;
      /* hier benutze ich geren relative werte denn so spare ich mir die anpassung in der Mibilen ansicht */
      padding: 3vw 6vw;
@@ -27,6 +27,8 @@
 
  html {
      font-family: Arial, Helvetica, sans-serif;
+     background-color: #F5F5F5;
+
  }
 
  img {
@@ -63,17 +65,17 @@
      padding: 10px;
  }
 
- section {
+ div {
     display: block;
     text-align: left;
     margin-bottom: 10vh;
 }
 
- section h1 {
+ div h1 {
     text-align: left;
  }
 
- section p {
+ div p {
     font-size: 50px;
     text-align: left;
  }
@@ -84,11 +86,6 @@
     margin-bottom: 15vh;
 }
 
-.text-gray-sm {
-    font-size: 14px;
-    color: var(--text-gray);
-}
-
 .down {
    display: block;
 }
@@ -97,67 +94,94 @@
    color: #666666;
    font-size: 16px;
 }
+
  /* ! Main */
+ 
+ main {
+    margin-bottom: 260px;
+    height: 100vh;
+    background-color: #F5F5F5;
+}
 
- .hero {
-     margin-bottom: var(--space-big);
+ main div {
+    display: block;
+    color: black;
+    text-align: left;
+    line-height: 1cm
  }
 
- .hero h1 {
-     width: 300px;
-     display: inline-block;
-     margin-right: 160px;
+ main div h2 {
+    font-size: 20px;
+}
+
+ main div p {
+    font-size: 16px;
  }
 
- .hero p {
-     display: inline-block;
-     font-size: 32px;
-     color: var(--text-gray);
-     width: 500px;
- }
-
- .img-arrow {
-     margin-bottom: var(--space-big);
- }
-
-
- /* Article */
-
- .proj article {
-     padding: var(--space-big) 0;
-     border-bottom: 1px solid black;
- }
-
- .proj article div {
-     display: inline-block;
-     width: 40vw;
-     padding-top: -100px;
- }
-
- .proj article img {
-     max-width: 40vw;
-     height: 220px;
-     /* benötigen wir damit das foto nicht verzert ist */
-     object-fit: cover;
-     /* so kann ich die postion einstellen */
-     object-position: top left;
-     margin-bottom: -30px;
- }
-
- .proj article h5 {
-     text-transform: uppercase;
- }
-
- .proj article h5,
- .proj article p {
-     margin-bottom: var(--space-sm);
- }
-
- .proj .text-gray-sm {
-     margin-bottom: var(--space-big);
+ .main article {
+    margin: 5vh;
+    padding: 5vh;
 
  }
 
- .proj article a {
-     text-decoration: underline;
- }
+.bildreihe1 img {
+    display: inline-block;
+    white-space: nowrap;
+    width: 30%; /* Größe der Bilder anpassen */
+    height: auto; /* Verhältnis beibehalten */
+    margin: 5px; /* Abstand zwischen den Bildern */
+}
+
+.bildreihe2 img {
+    display: inline-block;
+    white-space: nowrap;
+    width: 30%; /* Größe der Bilder anpassen */
+    height: auto; /* Verhältnis beibehalten */
+    margin: 5px; /* Abstand zwischen den Bildern */
+}
+
+/* section */
+
+.section {
+    margin-bottom: 260px;
+    height: 100vh;
+    background-color: #F5F5F5;
+}
+
+h3 {
+    font-size: 20;
+    color: black;
+    margin-bottom: 5vh;
+}
+
+.article1-1 {
+    display: block;
+    text-align: left;
+}
+
+.article1-1 h5 {
+    font-size: 12px;
+}
+
+.article1-1 p:nth-of-type(1) {
+    font-size: 20px;
+}
+
+.article1-1 p:nth-of-type(2) {
+    font-size: 12px;
+}
+
+/* footer */
+
+
+.unten a {
+    display: block;
+    color: #666666;
+    text-align: center;
+}
+
+.unten p {
+    display: block;
+    color: #666666;
+    text-align: center;
+}
