@@ -62,9 +62,3 @@ header nav li{
       width: 100%;
   }
 }
-
-/* Animation für das Blinken des Cursors */
-@keyframes blink {
-  50% {
-      border-color: transparent;
-  }

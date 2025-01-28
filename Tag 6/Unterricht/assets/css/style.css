@@ -1,0 +1,138 @@
+ /* ! So könnne wir SVG Stylen */
+ /* svg {
+     height: 500px;
+     width: 500px;
+     fill: blue;
+ } */
+
+ /* ! BASICS */
+
+ :root {
+     --space-sm: 30px;
+     --space-big: 60px;
+     --text-gray: #606060;
+ }
+
+ .wrapper {
+     background-color: #f3f3f3;
+     /* hier benutze ich geren relative werte denn so spare ich mir die anpassung in der Mibilen ansicht */
+     padding: 3vw 6vw;
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ html {
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ img {
+     max-width: 100%;
+ }
+
+ a {
+     text-decoration: none;
+     color: black;
+ }
+
+ h1 {
+     font-size: 60px;
+ }
+
+ h5 {
+     font-size: 20px;
+     font-weight: 300;
+ }
+
+ .text-gray-sm {
+     font-size: 14px;
+     color: var(--text-gray);
+ }
+
+
+ /* ! Header */
+
+ header {
+     margin-bottom: 260px;
+ }
+
+ header h2,
+ nav {
+     display: inline;
+ }
+
+ header nav {
+     float: right;
+ }
+
+ header nav a {
+     padding: 10px;
+ }
+
+ /* ! Main */
+
+ .hero {
+     margin-bottom: var(--space-big);
+ }
+
+ .hero h1 {
+     width: 300px;
+     display: inline-block;
+     margin-right: 160px;
+ }
+
+ .hero p {
+     display: inline-block;
+     font-size: 32px;
+     color: var(--text-gray);
+     width: 500px;
+ }
+
+ .img-arrow {
+     margin-bottom: var(--space-big);
+ }
+
+
+ /* Article */
+
+ .proj article {
+     padding: var(--space-big) 0;
+     border-bottom: 1px solid black;
+ }
+
+ .proj article div {
+     display: inline-block;
+     width: 40vw;
+     padding-top: -100px;
+ }
+
+ .proj article img {
+     max-width: 40vw;
+     height: 220px;
+     /* benötigen wir damit das foto nicht verzert ist */
+     object-fit: cover;
+     /* so kann ich die postion einstellen */
+     object-position: top left;
+     margin-bottom: -30px;
+ }
+
+ .proj article h5 {
+     text-transform: uppercase;
+ }
+
+ .proj article h5,
+ .proj article p {
+     margin-bottom: var(--space-sm);
+ }
+
+ .proj .text-gray-sm {
+     margin-bottom: var(--space-big);
+
+ }
+
+ .proj article a {
+     text-decoration: underline;
+ }
