@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>Forms</h1>
+    <p>Welche gibt es?</p>
+    <!-- Jedes inputfeld kannn eine "Label" haben. Diese kann ich miteinadner verheiraten, ich muss das "for" gleich benenen wir die "id" das inputfeldes -->
+    <label for="firstname">Firstname:</label>
+    <input id="firstname" type="text">
+
+    <form>
+        <!-- Number -->
+         <label for="num"></label>
+         <input type="number" id="num">
+
+        <!-- Tel -->
+         <label for="tel">Tel:</label>
+         <input type="tel" id="tel">
+
+         <!-- email -->
+          <label for="mail">E-Mail:</label>
+          <input type="email" id="mail">
+
+          <!-- Radios -->
+        <div>
+            <label>Was machst du am Liebsten?</label>
+
+            <input id="html" type="radio" name="fav-lag" checked value="hmtl">
+            <label for="html">html</label>
+
+            <input id="css" type="radio" name="fav-lag" value="css">
+            <label for="css">css</label>
+
+            <input id="ts" type="radio" name="fav-lag" value="typescrpit">
+            <label for="ts">ts</label>
+        </div>
+
+        <!-- Checkbox -->
+        <label for="checkboxhappy">Happy?</label>
+        <input type="checkbox" id="checkboxhappy">
+        <label for="checkboxhappy2">Super Dupper Happy?</label>
+        <input type="checkbox" id="checkboxhappy2">
+
+        <!-- Date -->
+        <label for="datum">Date:</label>
+        <input type="date" id="datum">
+
+        <!-- passwort -->
+
+        <label for="password">passwort</label>
+        <input type="password" id="password">
+
+        <!-- file -->
+        <label for="file">file</label>
+        <input type="file" id="file">
+
+        <!-- range -->
+         <label>Range</label>
+         <input type="range" min="0" max="60" step="20">
+
+         <br>
+
+         <!-- button -->
+          <input type="button" value="go">
+          <button value="go2">go2</button>
+
+          <br>
+
+          <!-- textarea -->
+        <label for="textarea">textarea</label>
+          <textarea cols="30" rows="10" id="textarea"></textarea>
+
+        <!-- select und option -->
+
+        <label for="sele">Vorwahlen</label>
+        <select id="sele">
+            <option value="+49">+49</option>
+            <option value="+39">+39</option>
+            <option value="+1">+1</option>
+        </select>
+
+        <ul style="list-style-type: none;">
+  <li><input type="radio" id="option1" name="options" value="option1"><label for="option1">Option 1</label></li>
+  <li><input type="radio" id="option2" name="options" value="option2"><label for="option2">Option 2</label></li>
+  <li><input type="radio" id="option3" name="options" value="option3"><label for="option3">Option 3</label></li>
+</ul>
+
+        <!-- submit -->
+
+        <input type="supmit" value="lets go">
+    </form>
+
+
+    <!-- placeholder -->
+     <input type="text" placeholder="Vorname eintragen...">
+
+    <!-- disabled -->
+     <label for="dis">disabled</label>
+     <input type="text">
+    </body>
+</html>
