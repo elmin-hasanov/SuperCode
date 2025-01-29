@@ -8,6 +8,11 @@ body {
     place-items: center;
 }
 
+.stern::after{
+    content: " *";
+    color: red;
+  }
+
 form {
     width: 400px;
     background: white;
