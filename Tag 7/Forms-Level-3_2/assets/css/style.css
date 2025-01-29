@@ -10,33 +10,39 @@ div {
     display: inline-block;
     text-align: center;
     width: 300px;
-    background-color: rgb(43, 60, 12);
+    background-color: #213039;
     line-height: 40px;
     padding: 15px 15px 35px 15px;
 }
 
-p, a {
+a {
     color: white;
 }
 
+h1 {
+    color: white;
+    font-size: 27px;
+}
+
 button[type="submit"] {
-    background-color: rgb(94, 165, 94);
+    background-color: #42be83;
     color: white;
     border: none;
     padding: 12px;
     width: 300px;
     font-size: 16px;
     font-weight: bold;
+    letter-spacing: 3px;
 }
 
 button[type="submit"]:hover {
-    background-color: rgb(68, 125, 68);
+    background-color: #279a63;
 }
 
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: rgb(94, 165, 94);
+    background-color: #42be83;
     color: white;
     text-decoration: none;
     width: 100px;
@@ -45,6 +51,11 @@ button[type="submit"]:hover {
 }
 
 input {
-    background-color: rgb(43, 60, 12);
-    width: 100%;
+    background-color: #213039;
+    width: 293px;
+}
+
+.reset {
+    color: green;
+    text-align: right;
 }
