@@ -1,11 +1,6 @@
 @font-face {
-    font-family: RalewayIta;
-    src: url(../fonts/Raleway-Italic-VariableFont_wght.ttf);
-}
-
-@font-face {
-    font-family: RelewayVar;
-    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+    font-family: Lato;
+    src: url(../fonts/Lato-Regular.ttf);
 }
 
 html {
@@ -15,8 +10,7 @@ html {
 * {
     padding: 0;
     margin: 0;
-    box-sizing:
-
+    box-sizing: ;
 }
 
 body {
@@ -26,48 +20,66 @@ body {
 
 /* header navbar */
 
-.header {
-
-}
-
 .navbar {
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
-    padding: 4vh 25vh 4vh 25vh;
-    font-family: RelewayVar;
-    position: sticky;
-    top: 0;
-    z-index: 1000; 
+    align-items: center;
+    padding: 2vh 2vh;
+    font-family: Lato;
 }
 
 .logo {
     display: flex;
-    font-size: clamp(1rem, 1vw, 1rem); 
     align-items: center;
+    padding: 1vh 6vh;
+    gap: 2vh;
+    font-size: 24px;
 }
 
 .nav {
     display: flex;
-    text-decoration: none;
-    list-style: none;
-    font-size: clamp(1rem, 1vw, 1rem); 
+    justify-content: space-between;
     align-items: center;
-    gap: 5vh;
+    flex-grow: 1;
+}
+
+.nlinks, .nrechts {
+    display: flex;
+    gap: 2vh;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nrechts {
+    margin-left: auto;
 }
 
 .nav li a {
     text-decoration: none;
     color: black;
-    text-transform: uppercase;
+    padding: 1vh;
 }
 
 .nav li a:hover {
     color: rgb(70, 70, 70);
 }
 
-
 /* headercenter */
+
+
+.rings {
+    display: flex;
+    font-family: Lato;
+    font-size: 24px;
+    margin: 3vh 20vh;
+}
+
+.mitte {
+    display: flex;
+    flex-direction: column;
+}
 
 .headercenter {
     display: flex;
@@ -82,46 +94,74 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
+    font-family: Lato;
+    gap: 2vh;
 }
 
 .products div {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    padding: 2vh 2vh 2vh 2vh;
 }
 
 .product1 {
     background-image: url(../img/ring001.png.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    border-radius: 2vh 2vh 2vh 2vh;
     width: 50.8vh;
-    height: 33.9vh;  
+    height: 33.9vh;
 }
 
 .product2 {
     background-image: url(../img/ring002.png.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    border-radius: 2vh 2vh 2vh 2vh;
     width: 50.8vh;
     height: 33.9vh;
 }
 
 .product3 {
     background-image: url(../img/ring003.png.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    border-radius: 2vh 2vh 2vh 2vh;
     width: 50.8vh;
     height: 33.9vh;
 }
 
 .product4 {
     background-image: url(../img/ring004.png.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    border-radius: 2vh 2vh 2vh 2vh;
     width: 50.8vh;
     height: 33.9vh;
 }
 
 .product5 {
     background-image: url(../img/ring005.png.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    border-radius: 2vh 2vh 2vh 2vh;
     width: 50.8vh;
     height: 33.9vh;
 }
 
 .product6 {
     background-image: url(../img/ring006.png.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    border-radius: 2vh 2vh 2vh 2vh;
     width: 50.8vh;
     height: 33.9vh;
 }
