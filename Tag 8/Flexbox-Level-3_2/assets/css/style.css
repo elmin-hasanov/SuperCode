@@ -1,6 +1,15 @@
+@font-face {
+    font-family: RalewayIta;
+    src: url(../fonts/Raleway-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: RelewayVar;
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+
 html {
-    font-size: 62,5%;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 62,5%; */
 }
 
 * {
@@ -11,16 +20,25 @@ html {
 }
 
 body {
-    background-image: url(../img/ford.jpg);
     background-size: cover;
     background-position: top;
 }
 
+/* header navbar */
+
 .header {
-    background-color: rgb(169, 169, 169,0.5);
+
+}
+
+.navbar {
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
-    padding: 3vh 15vh 3vh 5vh;
+    padding: 4vh 25vh 4vh 25vh;
+    font-family: RelewayVar;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
 }
 
 .logo {
@@ -29,7 +47,7 @@ body {
     align-items: center;
 }
 
-.navbar {
+.nav {
     display: flex;
     text-decoration: none;
     list-style: none;
@@ -38,11 +56,72 @@ body {
     gap: 5vh;
 }
 
-.navbar li a {
+.nav li a {
     text-decoration: none;
     color: black;
+    text-transform: uppercase;
 }
 
-.navbar li a:hover {
+.nav li a:hover {
     color: rgb(70, 70, 70);
+}
+
+
+/* headercenter */
+
+.headercenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #D9E8E5;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.products div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.product1 {
+    background-image: url(../img/ring001.png.jpg);
+    width: 50.8vh;
+    height: 33.9vh;  
+}
+
+.product2 {
+    background-image: url(../img/ring002.png.jpg);
+    width: 50.8vh;
+    height: 33.9vh;
+}
+
+.product3 {
+    background-image: url(../img/ring003.png.jpg);
+    width: 50.8vh;
+    height: 33.9vh;
+}
+
+.product4 {
+    background-image: url(../img/ring004.png.jpg);
+    width: 50.8vh;
+    height: 33.9vh;
+}
+
+.product5 {
+    background-image: url(../img/ring005.png.jpg);
+    width: 50.8vh;
+    height: 33.9vh;
+}
+
+.product6 {
+    background-image: url(../img/ring006.png.jpg);
+    width: 50.8vh;
+    height: 33.9vh;
 }
