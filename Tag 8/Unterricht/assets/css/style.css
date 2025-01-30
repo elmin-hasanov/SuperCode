@@ -99,7 +99,6 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: rgb(7, 119, 82);
-    justify-content: space-between;
 }
 
 header article {
