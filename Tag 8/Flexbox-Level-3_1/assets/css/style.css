@@ -1,0 +1,129 @@
+@font-face {
+    font-family: RalewayIta;
+    src: url(../fonts/Raleway-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: RelewayVar;
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+
+html {
+    /* font-size: 62,5%; */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:
+
+}
+
+body {
+    background-size: cover;
+    background-position: top;
+}
+
+/* header navbar */
+
+.header {
+
+}
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 4vh 25vh 4vh 25vh;
+    font-family: RelewayVar;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+
+.logo {
+    display: flex;
+    font-size: clamp(1rem, 1vw, 1rem); 
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    font-size: clamp(1rem, 1vw, 1rem); 
+    align-items: center;
+    gap: 5vh;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.nav li a:hover {
+    color: rgb(70, 70, 70);
+}
+
+
+/* headercenter */
+
+.headercenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../img/header_background_image.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.headertxt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: white;
+    font-family: RelewayVar;
+    gap: 4vh;
+}
+
+.headertxt h1 {
+    font-size: clamp(32px, 5vw, 60px);
+    font-style: normal;
+    font-weight: 400;
+}
+
+.headertxt p {
+    font-size: 14px;
+}
+
+.headertxt a {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.centernav {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 1vh;
+}
+
+.centernav1 {
+    padding: 2.24vh 8.96vh 2.24vh 8.96vh;
+    background-color: #745CF9;
+    border: 2px solid #745CF9;
+}
+
+.centernav2 {
+    padding: 2.24vh 6.27vh 2.24vh 6.27vh;
+    border: 2px solid #ffffff;
+}
