@@ -1,0 +1,397 @@
+@font-face {
+    font-family: RalewayIta;
+    src: url(../fonts/Raleway-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: RelewayVar;
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+
+html {
+    font-family: RelewayVar;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
+}
+
+body {
+    background-size: cover;
+    background-position: top;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* header navbar */
+
+.header {
+    height: 100vh;
+}
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 4vh 25vh 4vh 25vh;
+}
+
+.logo {
+    display: flex;
+    align-content: center;
+    font-size: 24px; 
+    align-items: center;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.nav {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    font-size: 13px; 
+    align-items: center;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.nav li a:hover {
+    color: rgb(70, 70, 70);
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    cursor: pointer;
+    display: none;
+}
+
+.burger div {
+    height: 0.7px;
+    width: 25px;
+    padding: 1px 1px 1px 1px;
+    border-radius: 5px;
+    background-color: black;
+}
+
+/* headercenter */
+
+.headercenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url("../img/header_background_image.png") no-repeat center / cover;
+}
+
+.headertxt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: white;
+    gap: 4vh;
+}
+
+.headertxt h1 {
+    font-size: clamp(32px, 5vw, 60px);
+    font-style: normal;
+    font-weight: 400;
+}
+
+.headertxt p {
+    font-size: 14px;
+}
+
+.headertxt a {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.centernav {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 1vh;
+}
+
+.centernav1 {
+    display: inline-block;
+    padding: 2.24vh 8.96vh 2.24vh 8.96vh;
+    background-color: #745CF9;
+    border: 2px solid #745CF9;
+}
+
+.centernav2 {
+    display: inline-block;
+    padding: 2.24vh 6.27vh 2.24vh 6.27vh;
+    border: 2px solid #ffffff;
+}
+
+
+/* Main */
+
+.artikel1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    padding: 9vw 5vw 5vw 9vw;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.artikel1 img {
+    width: 50%;
+}
+
+.rechts {
+    background-color: #F5F5F5;
+}
+
+.artikel1 a {
+    color: #F5F5F5;
+    margin-top: 2vh;
+
+}
+
+
+.artikel1 p {
+    color: #000000;
+    margin-bottom: 2vh;
+}
+
+.artikel1 h3 {
+    color: #000000;
+    margin-bottom: 2vh;
+}
+/*  */
+.artikel2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2vw;
+    padding: 9vw 5vw 5vw 9vw;
+    max-width: 1300px;
+    margin: auto;
+    background: url(../img/parallax.jpeg);
+    background-attachment: fixed;
+}
+
+.artikel2 a {
+    color: #F5F5F5;
+    margin-top: 2vh;
+
+}
+
+.artikel2 p {
+    color: #ffffff;
+    margin-bottom: 2vh;
+    font-size: 14px;
+}
+
+.artikel2 h3 {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 2vh;
+}
+
+/*  */
+
+.artikel3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2vw;
+    padding: 6vw 4vw 0vw 4vw;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.artikel3 a {
+    color: #ffffff;
+    margin-top: 2vh;
+}
+
+.artikel3 p {
+    color: #454545;
+    margin-bottom: 2vh;
+    font-size: 14px;
+}
+
+.artikel3 h3 {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 2vh;
+}
+
+/* Galerie */
+
+.artikel4 h3 , p {
+    text-align: center;
+    padding-bottom: 30px ;
+}
+
+.artikel4 {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    padding: 10vh 0vh 10vh 0vh;
+}
+
+.artikel4 div {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+}
+
+.artikel4 div img {
+    width: 100%; /* Skaliert das Bild innerhalb des Containers */
+    height: auto; /* Erhält das Seitenverhältnis */
+    object-fit: contain; /* Stellt sicher, dass das Bild nicht verzerrt wird */
+}
+
+/* artikel6 */
+
+.artikel6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;    
+}
+
+.logos img {
+    padding: 6vw;
+}
+
+.artikel6 h3 {
+    margin: 100px 0px 0px 80px;
+}
+
+
+
+
+
+.artikel5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 9vw 2vw 2vw 9vw;
+    max-width: 1300px;
+    margin: auto;
+    background: url(../img/Intersect.jpg);
+}
+
+.artikel5 a {
+    color: #F5F5F5;
+    margin-top: 2vh;
+
+}
+
+.artikel5 p {
+    color: #ffffff;
+    margin-bottom: 1vh;
+    font-size: 14px;
+}
+
+.artikel5 h3 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+.artikel7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-color: #F5F5F5;
+    padding: 70px 70px;
+}
+
+.artikel7 div {
+    display: flex;
+    align-items: center;
+    padding-right: 7vw;
+    font-size: 20px;
+}
+
+.artikel7 a {
+    color: #ffffff;
+}
+
+.artikel8 {
+    display: flex;
+    background-color: #000000;
+    padding: 70px 70px;
+}
+
+.artikel8 p {
+    color: #ffffff;
+}
+
+.artikel8 p span {
+    font-weight: bold;
+}
+
+/* Media Querys */
+
+@media screen and (max-width: 1000px) {
+    .burger {
+        display: flex;
+    }
+
+    .nav {
+        display: none;
+    }
+    
+    
+    body {
+
+    }
+}
+
+
+/* für dunkle einstellung */
+
+@media (prefers-color-scheme: dark) {
+    
+}

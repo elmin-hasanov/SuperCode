@@ -1,0 +1,36 @@
+.gridboxen {
+    background-color: antiquewhite;
+    min-height: 400px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.box1 {
+    background-color: brown;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.box2 {
+    background-color: rgb(27, 24, 205);
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+}
+.box3 {
+    background-color: rgb(0, 157, 149);
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.box4 {
+    background-color: rgb(117, 243, 0);
+}
+
+.box5 {
+    background-color: rgb(117, 243, 0);
+}

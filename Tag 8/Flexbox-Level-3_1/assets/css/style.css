@@ -27,7 +27,7 @@ body {
 /* header navbar */
 
 .header {
-
+    height: 100vh;
 }
 
 .navbar {
@@ -66,18 +66,30 @@ body {
     color: rgb(70, 70, 70);
 }
 
+.burger {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    cursor: pointer;
+    display: none;
+}
+
+.burger div {
+    height: 0.7px;
+    width: 25px;
+    padding: 1px 1px 1px 1px;
+    border-radius: 5px;
+    background-color: black;
+}
 
 /* headercenter */
 
-.headercenter{
+.headercenter {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url(../img/header_background_image.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
+    background: url("../img/header_background_image.png") no-repeat center / cover;
 }
 
 .headertxt {
@@ -126,4 +138,29 @@ body {
 .centernav2 {
     padding: 2.24vh 6.27vh 2.24vh 6.27vh;
     border: 2px solid #ffffff;
+}
+
+
+/* Media Querys */
+
+@media screen and (max-width: 800px) {
+    .burger {
+        display: flex;
+    }
+
+    .nav {
+        display: none;
+    }
+    
+    
+    body {
+
+    }
+}
+
+
+/* für dunkle einstellung */
+
+@media (prefers-color-scheme: dark) {
+    
 }

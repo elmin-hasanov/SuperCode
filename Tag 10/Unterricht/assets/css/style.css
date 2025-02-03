@@ -1,0 +1,148 @@
+div {
+    color: white;
+    font-size: 30px;
+}
+
+div:nth-child(odd) {
+    background-color: orange;
+}
+
+div:nth-child(even) {
+    background-color: blue;
+}
+
+/* ! Anordnung bei Grid */
+/* * Colomns sind Horizontal (Links - Rechts) */
+/* * Row sind vertikal (Oben - Unten) */
+
+/* # ==== Version 1 ==== */
+
+
+/* ! Eletrn Element ansprechen */
+.grid-parent {
+    background-color: rgb(214, 213, 213);
+    min-height: 100vh;
+
+    display: grid;
+
+    /* !Bauen erstaml die Bassi der Colums auf */
+    /* Gibt es nur bei grid */
+    /* 1fr = 1 Fraction (Brtuchteilo von verfügbaren Bereich)) */
+    /* 2fr = 2 Fraction sind das doppelte von 1fr */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: 200px 1fr 1fr 2fr; */
+
+    /* ! Columns */
+    /* * Kurzschreibform */
+    /* Macht das selbe wie in Zeile 26  */
+    grid-template-columns: repeat(4, 1fr);
+
+    /* ! Row */
+    /* benutze ich in der regel selten, da die Rows automatisch erstellt werden wenn ich die Columns anlege. */
+    /* grid-template-rows: repeat(5, 1fr); */
+    /* grid-template-rows: 100px 50px 400px; */
+
+
+    /* ! Gap */
+    /* oben unten */
+    row-gap: 5px;
+
+    /* link rechts */
+    column-gap: 20px;
+
+    /* überall */
+    gap: 10px;
+}
+
+/* ! Kind Element ansprechen */
+section .box1 {
+    background-color: rgb(226, 58, 43);
+
+    /* Mit Column start sage ich wo das Element starten soll und mit end wo das enden soll (Man muss die spalten zählen nicht die kästchen) */
+    /* * Anordnen */
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    /* * Anordnen Kuzschreibform */
+    /* erster = start */
+    /* zweiter = ende */
+    grid-column: 1 / 4;
+
+    /* * ❤️‍🔥 Anordnen mit Kästchen zählen (ohne spaöten zählen) */
+    /* mit span zählen wir nun die kästchen und nichtmehr die spalten. */
+    grid-column: 1 / span 2;
+
+    /* * ganze Column strecken */
+    /* mit -1 sage ich das ich von Links nach recht das element strecken will */
+    grid-column: 1 / -1;
+
+
+    /* ! Align- und Justfy self */
+    /* Default Wert ist strech */
+    align-self: stretch;
+    justify-self: stretch;
+
+    /* align-self: center;
+    justify-self: center; */
+
+
+    /* ! Flex im Grid  */
+    /* ich benutze auch sehr geren Flex im Grid um die einzelen elemente IM grid zu postionieren */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px;
+    flex-wrap: wrap; */
+}
+
+
+section .box6 {
+    background-color: green;
+    /* Hier spreche ich das element von links nach rechts an */
+    grid-column: 1 / span 4;
+    /* Hier spreche ich das element von oben nach unten an */
+    grid-row: 3 / span 2;
+}
+
+
+
+hr {
+    margin: 100px 0
+}
+
+/* # ==== Version 2 ==== */
+
+/* ! Grid Areas */
+
+.grid-area {
+    /* mit grid-templat-areas können wir die felder beschriften (Achtung es sollten auch die felder zur ferfügung stehen) */
+
+    display: grid;
+    gap: 5px;
+
+    grid-template-areas:
+        "logo pizza pizza pizza"
+        "main main main aside"
+        "footer footer footer footer";
+}
+
+section .boxa {
+    background-color: olive;
+    /* Um grid.area zu verwenden muss ich im ElternElement "grid-templat-areas" vergeben. Hier sage ich dann wo die Kinderelemente hin sollen ("grid-area") */
+    grid-area: pizza;
+}
+
+
+
+
+
+
+@media screen and (max-width: 550px) {
+    .grid-parent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section .box6 {
+        grid-column: 1/-1;
+    }
+}

@@ -1,0 +1,217 @@
+@font-face {
+    font-family: CormorantGaramond-Regular;
+    src: url(../font/CormorantGaramond-Regular.ttf);
+}
+
+@font-face {
+    font-family: CormorantGaramond-Light;
+    src: url(../font/CormorantGaramond-Light.ttf);
+}
+
+
+body {
+    font-family: CormorantGaramond-Light;
+    margin: 0;
+    background: #E9E9E0;
+    border: 15px solid white;
+    }
+
+p {
+    color: #333;
+    font-family: CormorantGaramond-Light;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h1 {
+    color: #333;
+    font-family: CormorantGaramond-Light;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h2 {
+    color: #333;
+    font-family: CormorantGaramond-Light;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+a {
+    color: #333;
+    font-family: CormorantGaramond-Light;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+/* Header */
+
+header h3 {
+    font-family: CormorantGaramond-Light;
+    text-align: center;
+    font-size: 30px;
+}
+
+header h3 span:nth-of-type(1) {
+    font-size: 46px;
+
+}
+
+header h3 span:nth-of-type(2) {
+    vertical-align: -4px;
+    font-size: 30px;
+
+}
+
+header h3 span:nth-of-type(3) {
+    vertical-align: -4px;
+    font-size: 30px;
+
+}
+
+header h3 span:nth-of-type(4) {
+    font-size: 45px;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 3px solid #333333;
+    border-bottom: 3px solid #333333;
+    padding: 10px 10px;
+}
+
+
+/* container */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+  
+main {
+    width: 80%;
+    display: grid;
+    gap: 7px;
+    grid-template-areas:
+    "uberschrift1 uberschrift2 uberschrift3"
+    "arealinks1 areamitte1 arearechts1"
+    "arealinks2 areamitte2 arearechts2"
+    "arealinks3 areamitte3 arearechts3";
+}
+
+aside {
+    width: 20%;
+    display: grid;
+    grid-template-areas:
+    "aside1"
+    "aside2"
+    "aside3"
+    "aside4";
+
+    gap: 8px;
+}
+
+.uberschrift {
+    grid-area: uberschrift1;
+    grid-column-start: uberschrift1;
+    grid-column-end: uberschrift3;
+    text-align: center;    
+}
+
+.article1 {
+    grid-area: arealinks1;
+}
+
+.article2 {
+    grid-area: arealinks2;
+}
+
+.article3 {
+    grid-area: arealinks3;
+}
+
+.article4 {
+    grid-area: areamitte1;
+}
+
+.article5 {
+    grid-area: areamitte2;
+}
+
+.article6 {
+    grid-area: areamitte3;
+}
+
+
+.article7 {
+    grid-area: arearechts1;
+    grid-row-start: arearechts1;
+    grid-row-end: arearechts3;
+}
+
+.article7 img {
+    width: 70vh;
+}
+
+.article8 {
+    grid-area: arearechts2;
+}
+
+.article8 {
+    grid-area: arearechts3;
+}
+/* aside */
+  
+aside {
+    width: 20%;
+    display: grid;
+    grid-template-areas:
+    "aside1"
+    "aside2"
+    "aside3"
+    "aside4";
+    gap: 8px;
+    margin: 20px;
+}
+
+.aside1, .aside2, .aside3, .aside4 {
+    display: grid;
+    place-items: center;
+
+}
+
+.aside1 {
+    grid-area: aside1;
+    height: 80px;
+}
+
+.aside2 {
+    border: 5px #333333 solid;
+    grid-area: aside2;
+    width: 216px;
+    height: 231px;
+}
+
+.aside3 {
+    border: 5px #333333 solid;
+    grid-area: aside3;
+    width: 216px;
+    height: 231px;
+}
+
+.aside4 {
+    border: 5px #333333 solid;
+    grid-area: aside4;
+    width: 216px;
+    height: 231px;
+}
