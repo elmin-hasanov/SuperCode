@@ -251,7 +251,7 @@ img {
 /* Galerie */
 
 .artikel4 h3 , p {
-    text-align: center;
+    text-align: left;
     padding-bottom: 30px ;
 }
 
@@ -333,10 +333,6 @@ img {
     font-weight: 400;
     margin-bottom: 40px;
 }
-
-
-
-
 
 .artikel7 {
     display: flex;

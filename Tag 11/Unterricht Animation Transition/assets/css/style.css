@@ -1,0 +1,302 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    margin: 50px 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(49, 167, 127);
+    border-radius: 20px;
+    margin: 50px auto 0 auto;
+    cursor: pointer;
+
+
+
+    /* # === Transition === */
+
+    /* * WICHTIG: Wir müssen es den Haupt Element geben, nicht den hover */
+    /* 1. was soll animniert werden (geht zb auch nur background-color (optional) */
+    /* 2. wie lange soll die animation gehen (MUSS WERT)*/
+    /* 3. wie lange soll die verzögerung sein (optional)*/
+    /* 4. wie soll die animation verlaufen (optional)*/
+    /* https://cubic-bezier.com/#0,.97,1,-1.39 */
+
+    transition: all .5s 0s linear;
+}
+
+
+/* # === Transform === */
+
+.box:hover {
+    /* ! Translate */
+    /* ? 🔥 Verschibt das Element nach Links/Rechts (-werte gehen auch) */
+    transform: translateX(-50px);
+
+    /* ? 🔥 Verschibt das Element nach oben/unten  */
+    transform: translateY(50px);
+
+    /* ? 🔥 Verschiebt das Element in der X und Y achse (erste wert is x) */
+    transform: translate(-50px, -50px);
+
+
+    /* ! Rotate */
+    /* ? animiert seitliche rotation */
+    transform: rotateY(180deg);
+
+    /* ? animiert oben unten rotation */
+    transform: rotateX(180deg);
+
+    /* ? 🔥 animiert die rotation um die eigene achse */
+    transform: rotate(180deg);
+
+
+    /* ! Scale */
+    /* ? 🔥 Animiert die höhe udn breite (2 heißt 2x so groß) */
+    transform: scale(1.1);
+
+    /* ? Animier die breite (wird auseinandergezogen) */
+    transform: scaleX(2);
+
+    /* ? Animier die höhe (wird auseinandergezogen) */
+    transform: scaleY(2);
+
+
+    /* ! Skew */
+    /* ? anmiert die ecken, wird auseinandergezogen */
+    transform: skew(-20deg, -20deg);
+
+
+    /* ! Mehrer als Shorthand */
+    /* ? Einfach ohne , oder . hinten weg schrieben */
+    transform: translate(50px, 50px) rotate(180deg) skew(-20deg, -20deg) scale(1.5) rotateY(180deg);
+
+
+    /* ! Transform Origin */
+    transform: rotate(30deg);
+    /* ? verlgen den ursrungs des Transform an eine bestimmtn stelle, Default ist center */
+    transform-origin: top right;
+}
+
+/* # ==== Animation ==== */
+
+.drehen {
+    background-color: rgb(255, 151, 40);
+    height: 150px;
+    width: 150px;
+    margin: auto;
+
+    /* * 1. Mit Animation rufe ich den namen der Animation auf */
+    /* * 2. DivDrehen = name der animation */
+    /* * 3. 5s = wie lange soll die dauern */
+    /* * 4. linear = animationsverlauf */
+    /* * 5. infinite = Wie oft soll die animatuion ausgeführt werden. (man kann auch zahlen angeben) */
+    /* * 6. normal = Animations richtung */
+    /* ? ----> alternate: geht wieder zurück wie die aninmation gekommen ist (min 2 mal abspielen)*/
+    /* ? ----> forwards: die animation bleibt am Endpunkt stehen. */
+    /* * 7. 0.1s = verzögerung der animation*/
+
+    animation: DivDrehen 5s linear 2 normal 0.1s
+}
+
+
+/* ! wie haben zwei optionen für ein Keyframe zu schrieben, einmal "from to" und "1% - 100%" */
+/* * from to ----> benutzen wir für Primitive animationen (leichte)  */
+/* * 1% - 100% --> benutzen wir für komplexe animationen */
+
+@keyframes DivDrehen {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(300deg);
+    }
+}
+
+
+/* ! Big & Small*/
+
+h1 {
+    text-align: center;
+
+    /* animation: scaleBig 2s linear 1; */
+}
+
+@keyframes scaleBig {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(2);
+        color: blue;
+    }
+
+    50% {
+        transform: scale(0.5);
+        color: firebrick;
+    }
+
+    75% {
+        transform: scale(3);
+        color: rgb(178, 34, 144);
+        border: 2px solid pink;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* ! Ball Animation */
+.animation {
+    background-color: gray;
+    height: 500px;
+    width: 500px;
+}
+
+.animation article {
+    height: 50%;
+    width: 50%;
+    background-color: rgb(1, 150, 249);
+    border-radius: 50%;
+
+    /* animation: move 5s 1; */
+}
+
+@keyframes move {
+
+    0%,
+    100% {
+        background-color: tomato;
+    }
+
+    25% {
+        transform: translateY(100%);
+    }
+
+    50% {
+        transform: translate(100%, 100%);
+        background-color: red;
+    }
+
+    75% {
+        transform: translateX(100%);
+    }
+}
+
+.loading {
+    background-color: blue;
+    height: 500px;
+    width: 100%;
+}
+
+
+.loading div {
+    background-color: tomato;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+
+}
+
+@keyframes loaderVonNina {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px) scale(1.3);
+        background-color: orange;
+    }
+}
+
+.loading div:nth-of-type(1) {
+    animation: loaderVonNina 2s infinite ease-in-out;
+}
+
+.loading div:nth-of-type(2) {
+    animation: loaderVonNina 2s infinite ease-in-out .2s;
+}
+
+.loading div:nth-of-type(3) {
+    animation: loaderVonNina 2s infinite ease-in-out .4s;
+}
+
+.loading div:nth-of-type(4) {
+    animation: loaderVonNina 2s infinite ease-in-out .6s;
+}
+
+
+
+
+
+
+
+
+
+.loader {
+    width: 60px;
+    height: 40px;
+    position: relative;
+}
+
+.loader::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(farthest-side at bottom, #ffc10a 92%, #0000) top /30px 15px,
+        radial-gradient(farthest-side at top left, #0000 92%, #ffc10a) bottom left / 15px 20px,
+        radial-gradient(farthest-side at top right, #0000 92%, #ffc10a) bottom right/ 15px 20px,
+        linear-gradient(#ffc10a 0 0) bottom/30px 26px;
+    background-repeat: no-repeat;
+    transform-origin: 50% -3px;
+    animation: l10-1 .5s infinite alternate linear;
+}
+
+.loader::before {
+    content: "";
+    position: absolute;
+    inset: -6px calc(50% - 10px) -10px;
+    background:
+        radial-gradient(farthest-side, #ff9f04 90%, #0000) top /10px 10px,
+        radial-gradient(farthest-side, #ff9f04 90%, #0000) bottom/20px 20px;
+    background-repeat: no-repeat;
+    transform-origin: 50% 3px;
+    animation: l10-2 .5s infinite alternate linear;
+}
+
+@keyframes l10-1 {
+    0% {
+        transform: rotate(-30deg)
+    }
+
+    100% {
+        transform: rotate(30deg)
+    }
+}
+
+@keyframes l10-2 {
+    0% {
+        transform: rotate(-20deg)
+    }
+
+    100% {
+        transform: rotate(20deg)
+    }
+}
