@@ -1,0 +1,14 @@
+.h1h2 {
+    color: yellowgreen;
+    text-align: center;
+}
+
+.main {
+    color: blueviolet;
+    background-color: aqua;
+    padding: 2vw;
+    border: 1px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+}

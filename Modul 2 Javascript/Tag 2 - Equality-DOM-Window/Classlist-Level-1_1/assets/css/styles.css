@@ -1,0 +1,11 @@
+.head {
+    color: burlywood;
+    text-decoration: underline;
+}
+
+.liststyle {
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(4, 55, 55);
+    list-style-type: disc;
+}
