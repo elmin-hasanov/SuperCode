@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* HEADER */
+
+/* # Welche Postion atribute gibt es? */
+/* * static -> default */
+/* * fixed */
+/* * absolute & relative */
+/* * sticky */
+
+/* * z-index */
+
+/* ! fixed */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.242);
+    padding: 2vh 10px;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+hr {
+    margin: 80px 0;
+}
+
+header img {
+    margin-top: 48px;
+}
+
+/* ! fixed */
+.icon svg {
+    fill: rgba(82, 82, 82, 0.471);
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    z-index: 2;
+}
+
+.icon svg:hover {
+    transform: scale(1.2);
+    fill: rgb(82, 82, 82);
+}
+
+/* ! Sticky */
+.sticky {
+    background-color: antiquewhite;
+    min-height: 800px;
+}
+
+.sticky div {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    height: 150px;
+    width: 150px;
+
+    position: sticky;
+    top: 70px;
+    left: 230px;
+}
+
+.abso {
+    height: 1000px;
+    background-color: rgb(213, 213, 213);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ! Relative & Absolute */
+/* wenn ich ein Element absolute plazieren möchte ist es ratsam den elternelment eine postion relativ zu geben. Ohne das, richtet sich das absolut plazierte elment an den body. */
+.abso div {
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.261);
+    padding: 30px;
+    margin: auto;
+
+    position: relative;
+    /*  */
+}
+
+.abso svg {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+
+.index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.index img {
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.index div {
+    background-color: antiquewhite;
+    height: 200px;
+    width: 200px;
+    margin-left: -40px;
+}
+
+/* ! CALI */
+
+.cali {
+    min-height: 900px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cali div {
+
+    max-width: 250px;
+}
+
+.cali h1 {
+    font-size: 45px;
+}
+
+.cali img {
+    position: absolute;
+}
+
+.cali img:nth-of-type(1) {
+    top: -50px;
+    right: 100px;
+}
+
+.cali img:nth-of-type(2) {
+    top: 280px;
+    left: 55px;
+}
+
+.cali img:nth-of-type(3) {
+    bottom: 150px;
+    right: 0px;
+}
+
+@media screen and (max-width: 920px) {
+    .cali img:nth-of-type(2) {
+        display: none;
+    }
+
+    .cali img:nth-of-type(3) {
+        bottom: 100px;
+        right: 0px;
+    }
+}

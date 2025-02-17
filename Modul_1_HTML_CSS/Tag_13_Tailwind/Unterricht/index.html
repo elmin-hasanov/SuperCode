@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <header class="mx-[5vw] mb-35">
+        <nav class="flex justify-between items-center mb-15">
+            <img src="./assets/img/logo.png" alt="logo">
+            <div>
+                <!-- Wenn ich nicht mit rem arbeiten will kann ich [] benutzen um einen andern wert / einheit zu benutzen -->
+                <a class="px-[2vw]" href="#">Home</a>
+                <a class="px-[2vw]" href="#">About</a>
+                <a class="px-[2vw]" href="#">Services</a>
+                <a class="px-[2vw]" href="#">Contact</a>
+            </div>
+            <a class="bg-[#107df2e3] p-3 text-white rounded-full shadow-xl  inline-block" href="#">Book Now</a>
+        </nav>
+
+        <!-- ! Hero -->
+
+        <!-- ! in TW ist immer Mobile First ansatz -->
+        <!-- * wir stylen erst für kleine geräte und gehen dan zu den größeren geräten -->
+
+        <!-- - Standart Berakpoints -> sm, md, lg, xl, 2xl-->
+
+        <section class="flex flex-col md:flex-row md:justify-center items-center gap-6">
+            <div class=" md:max-w-[390px]">
+                <p class="text-teal-400 mb-3">Dr. Matthew Anderson</p>
+                <h1 class="text-4xl font-black mb-3">A dedicated doctor you can trust</h1>
+                <p class="mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum corrupti dolores, odit
+                    tempore
+                    facere amet ad sequi expedita quae itaque, illo at, hic eligendi iusto neque? Excepturi
+                    necessitatibus illum quam!</p>
+                <a class="bg-[#107df2e3] p-3 text-white rounded-full shadow-xl inline-block" href="#">Book an
+                    appointment</a>
+            </div>
+
+            <img class=" md:max-w-[450px]" src="./assets/img/doc.png" alt="">
+        </section>
+    </header>
+    <main>
+
+        <!-- ! 3 Kästchen -->
+        <section class="flex flex-col mb-35 gap-2 m-2 md:flex-row md:max-w-[1000px] md:mx-auto  ">
+            <div class="bg-[#107df2e3] p-3 rounded-xl text-white bg-linear-to-r from-cyan-500 to-blue-500">
+                <h3 class="text-xl font-bold">24 hour service</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ex ea esse similique dolor qui nam
+                    atque. Numquam, eos vitae.</p>
+            </div>
+            <div class="bg-[#107df2e3] p-3 rounded-xl text-white">
+                <h3 class="text-xl font-bold bg-linear-to-r from-cyan-500 to-blue-500">8 years of experience</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ex ea esse similique dolor qui nam
+                    atque. Numquam, eos vitae.</p>
+            </div>
+            <div class="bg-[#107df2e3] p-3 rounded-xl text-white">
+                <h3 class="text-xl font-bold bg-linear-to-r from-cyan-500 to-blue-500">High quality care</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ex ea esse similique dolor qui nam
+                    atque. Numquam, eos vitae.</p>
+            </div>
+        </section>
+
+        <!-- ! Arzt -->
+        <section class="flex flex-col md:flex-row md:justify-center items-center gap-6 mb-35">
+            <img class=" md:max-w-[450px] mb-5" src="./assets/img/typ.png" alt="">
+            <div class=" md:max-w-[390px] m-2">
+                <p class="text-teal-400 mb-3">About me</p>
+                <h2 class="text-3xl font-medium mb-3">A dedicated doctor with the core mission to help</h2>
+                <p class="mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum corrupti dolores, odit
+                    tempore
+                    facere amet ad sequi expedita quae itaque, illo at, hic eligendi iusto neque? Excepturi
+                    necessitatibus illum quam!</p>
+                <a class="bg-[#107df2e3] p-3 text-white rounded-full shadow-xl inline-block" href="#">Book an
+                    appointment</a>
+            </div>
+        </section>
+
+        <!-- ! Runder Kreis -->
+        <section class="bg-blue-50 flex flex-col md:flex-row md:justify-center items-center gap-6 mb-35 py-[100px]">
+
+            <div class=" md:max-w-[390px] m-2">
+                <p class="text-teal-400 mb-3">Services</p>
+                <h2 class="text-3xl font-medium mb-3">Experienced in multiple medical practices</h2>
+                <p class="mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum corrupti dolores, odit
+                    tempore
+                    facere amet ad sequi expedita quae itaque, illo at, hic eligendi iusto neque? Excepturi
+                    necessitatibus illum quam!</p>
+                <a class="bg-[#107df2e3] p-3 text-white rounded-full shadow-xl inline-block transition-all hover:bg-red-400 hover:text-xl"
+                    href="#">Book
+                    an
+                    appointment</a>
+            </div>
+
+            <img class=" md:max-w-[450px] mb-5" src="./assets/img/med.png" alt="">
+        </section>
+    </main>
+
+
+</body>
+
+</html>
