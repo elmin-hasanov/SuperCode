@@ -1,6 +1,7 @@
 body {
     background-color: rgb(255, 227, 227);
     font-family: 'Courier New', Courier, monospace;
+    position: relative;
 }
 
 main {
@@ -9,10 +10,10 @@ main {
     align-items: center;
     justify-content: center;
     margin: 0;
-    padding-top: 200px;
+    padding-top: 40px;
 }
 
-.box {
+.form {
     display: inline-flex;
     margin: 10px 10px;
     padding: 50px 20px;
@@ -24,8 +25,6 @@ main {
     border-radius: 10px;
     background: #FFF;
     box-shadow: 0px 0px 20px 0px #AFAFAF;
-    position: relative;
-
 }
 
 .output {
@@ -43,9 +42,9 @@ main {
     background-repeat: no-repeat;
     width: 370px;
     height: 200px;
-    position: absolute;
-    top: -176px;
-    left: 50px;
+    position: relative;
+    top: 40px;
+    left: 10;
 }
 
 .chipvisa {

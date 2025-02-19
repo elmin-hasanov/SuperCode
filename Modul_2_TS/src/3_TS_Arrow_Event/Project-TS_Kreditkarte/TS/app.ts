@@ -1,4 +1,4 @@
-const nameInputForm = document.querySelector(".box");
+const nameInputForm = document.querySelector(".form");
 
 const cardNumberInput = document.querySelector<HTMLInputElement>("#cardnumber");
 const cardNumberOutput = document.querySelector<HTMLParagraphElement>(".outputnumber");
