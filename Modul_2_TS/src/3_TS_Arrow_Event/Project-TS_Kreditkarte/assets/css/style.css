@@ -1,8 +1,6 @@
-
-
-
 body {
     background-color: rgb(255, 227, 227);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 main {
@@ -16,14 +14,13 @@ main {
 
 .box {
     display: inline-flex;
-    margin: 2rem;
-    padding: 2rem;
+    margin: 10px 10px;
+    padding: 50px 20px;
     flex-direction: column;
     text-align: center;
     border: 1px solid rgba(0, 0, 0, 0);
-    width: 400px;
-    height: 200px;
-
+    width: 430px;
+    height: 220px;
     border-radius: 10px;
     background: #FFF;
     box-shadow: 0px 0px 20px 0px #AFAFAF;
@@ -39,7 +36,7 @@ main {
 .card {
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 10px;
     background-image: url(../img/card.png);
     background-size: cover;
     background-position: center; 
@@ -59,12 +56,18 @@ main {
     margin: 12px 18px;
 }
 
+.chipvisa img:nth-of-type(1) {
+    position: absolute;
+    top: 45px;
+    left: 42px;
+}
+
 img {
     width: 40px;
 }
 
 .outputnumber {
-    padding-top: 20px;
+    padding-top: 36px;
     padding-left: 20px;
     text-align: start;
 }
@@ -74,22 +77,29 @@ img {
     text-align: left;
     justify-content: space-between;
     margin: 0 auto;
-    margin: 12px 18px;
+    margin: 1px 18px;
 }
 
 .button {
     width: 160.8px;
     height: 35.2px;
-    padding: 10px 0px 10.4px 0px;
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
     background: #E5696B;
     color: #FFF;
-    font-family: Arial;
-    font-size: 13px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
 }
 
 .button:hover {
     background: rgb(167, 36, 38);
     color: #FFF;
+}
+
+.formstyle {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    text-align: left;
+    gap: 9px;
 }
