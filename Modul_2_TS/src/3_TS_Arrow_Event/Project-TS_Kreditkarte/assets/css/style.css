@@ -1,0 +1,95 @@
+
+
+
+body {
+    background-color: rgb(255, 227, 227);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-top: 200px;
+}
+
+.box {
+    display: inline-flex;
+    margin: 2rem;
+    padding: 2rem;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0);
+    width: 400px;
+    height: 200px;
+
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px #AFAFAF;
+    position: relative;
+
+}
+
+.output {
+    display: flex;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-image: url(../img/card.png);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 370px;
+    height: 200px;
+    position: absolute;
+    top: -176px;
+    left: 50px;
+}
+
+.chipvisa {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    margin: 12px 18px;
+}
+
+img {
+    width: 40px;
+}
+
+.outputnumber {
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: start;
+}
+
+.cardstylename {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin: 12px 18px;
+}
+
+.button {
+    width: 160.8px;
+    height: 35.2px;
+    padding: 10px 0px 10.4px 0px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background: #E5696B;
+    color: #FFF;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+.button:hover {
+    background: rgb(167, 36, 38);
+    color: #FFF;
+}

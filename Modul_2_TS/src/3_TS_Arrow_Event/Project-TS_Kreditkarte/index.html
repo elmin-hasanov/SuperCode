@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Tag 3 TS Arrow + Event Listener</title>
+</head>
+<body>
+    <main>
+        <form class="box" onsubmit="return false">
+            <div class="card">
+                <div class="chipvisa">
+                    <img src="./assets/img/chip.png" alt="">
+                    <img src="./assets/img/visa.png" alt="">
+                </div>
+                <div class="outputnumber">#### #### #### ####</div>
+                <div class="cardstylename">
+                    <div>
+                        <p>Card Holder</p>
+                        <p class="outputholder">FULL NAME</p>
+                    </div>
+                    <div>
+                        <p>Expires</p>
+                        <p class="outputexp">MM/YY</p>
+                    </div>
+                </div>
+            </div>
+
+            <label for="cardnumber">Card Number</label>
+            <input class="cardnum" id="cardnumber" type="text">
+
+            <label for="cardholder">Card Holder</label>
+            <input class="cardhold" id="cardholder" type="text">
+
+            <label for="expdate">Expiration Date</label>
+            <input class="exdate" id="expdate" type="text">
+
+            <label for="cvv">CVV</label>
+            <input class="cvvstyle" id="cvv" type="text">
+
+            <input id="supmit" class="button" type="submit"/>
+        </form>
+    </main>
+
+    <script type="module" src="./TS/app.ts"></script>
+</body>
+</html>
