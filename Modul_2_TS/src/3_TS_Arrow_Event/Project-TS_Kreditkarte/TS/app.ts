@@ -9,6 +9,8 @@ const cardHolderOutput = document.querySelector<HTMLParagraphElement>(".outputho
 const cardExpInput = document.querySelector<HTMLInputElement>("#expdate");
 const cardExpOutput = document.querySelector<HTMLParagraphElement>(".outputexp");
 
+const errorM = document.querySelector<HTMLParagraphElement>(".outputerror");
+
 nameInputForm?.addEventListener("submit", numberInputFunk);
 
 function numberInputFunk(event: Event) {
@@ -18,5 +20,17 @@ function numberInputFunk(event: Event) {
         cardNumberOutput.innerHTML = cardNumberInput.value;
         cardHolderOutput.innerHTML = cardHolderInput.value;
         cardExpOutput.innerHTML = cardExpInput.value;
+    }
+
+    if (!cardNumberInput?.value || !cardHolderInput?.value || !cardExpInput?.value) {
+        if (errorM) {
+            errorM.textContent = "Bitte alle Felder ausfüllen!";
+            errorM.style.color = "red";
+        }
+        return;
+    }
+
+    if (errorM) {
+        errorM.textContent = "";
     }
 }
