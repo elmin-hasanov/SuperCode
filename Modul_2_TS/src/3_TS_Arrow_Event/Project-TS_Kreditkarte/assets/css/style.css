@@ -1,7 +1,6 @@
 body {
     background-color: rgb(255, 227, 227);
     font-family: 'Courier New', Courier, monospace;
-    position: relative;
 }
 
 main {
@@ -27,10 +26,31 @@ main {
     box-shadow: 0px 0px 20px 0px #AFAFAF;
 }
 
-.output {
-    display: flex;
-
+.button {
+    width: 160.8px;
+    height: 35.2px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background: #E5696B;
+    color: #FFF;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
 }
+
+.button:hover {
+    background: rgb(167, 36, 38);
+    color: #FFF;
+}
+
+.formstyle {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    text-align: left;
+    gap: 9px;
+}
+
+/* Kreditcard */
 
 .card {
     display: flex;
@@ -77,28 +97,4 @@ img {
     justify-content: space-between;
     margin: 0 auto;
     margin: 1px 18px;
-}
-
-.button {
-    width: 160.8px;
-    height: 35.2px;
-    border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 5px;
-    background: #E5696B;
-    color: #FFF;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
-}
-
-.button:hover {
-    background: rgb(167, 36, 38);
-    color: #FFF;
-}
-
-.formstyle {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    text-align: left;
-    gap: 9px;
 }
