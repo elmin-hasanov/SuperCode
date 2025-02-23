@@ -1,0 +1,11 @@
+
+main div{
+    display: flex;
+    flex-direction: column;
+    color: rgb(96, 127, 71);
+    padding: 20px;
+    line-height: 10px;
+    font-weight: 600;
+    text-shadow: -1px 1px rgb(194, 194, 194);
+    font-size: 30px;
+}

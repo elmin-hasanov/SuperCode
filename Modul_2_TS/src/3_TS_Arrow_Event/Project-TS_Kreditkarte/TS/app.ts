@@ -16,10 +16,8 @@ nameInputForm?.addEventListener("submit", numberInputFunk);
 function numberInputFunk(event: Event) {
     event.preventDefault();
 
-    if (cardNumberInput && cardHolderInput && cardExpInput && cardNumberOutput && cardHolderOutput && cardExpOutput) {
-        cardNumberOutput.innerHTML = cardNumberInput.value;
-        cardHolderOutput.innerHTML = cardHolderInput.value;
-        cardExpOutput.innerHTML = cardExpInput.value;
+    if (errorM) {
+        errorM.textContent = "";
     }
 
     if (!cardNumberInput?.value || !cardHolderInput?.value || !cardExpInput?.value) {
@@ -30,7 +28,9 @@ function numberInputFunk(event: Event) {
         return;
     }
 
-    if (errorM) {
-        errorM.textContent = "";
+    if (cardNumberOutput && cardHolderOutput && cardExpOutput) {
+        cardNumberOutput.innerHTML = cardNumberInput.value;
+        cardHolderOutput.innerHTML = cardHolderInput.value;
+        cardExpOutput.innerHTML = cardExpInput.value;
     }
 }
