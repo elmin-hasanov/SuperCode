@@ -1,6 +1,6 @@
 const inputForm = document.querySelector("form");
-const inputFeld = document.querySelector<HTMLInputElement>("#input");
-const output = document.querySelector("#output");
+const inputFeld = document.querySelector("#input");
+const output = document.querySelector<HTMLInputElement>("#output");
 
 inputForm?.addEventListener("submit", rechner);
 
