@@ -1,0 +1,37 @@
+.shop-item {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: white;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 40px 15px 20px;
+}
+
+/* das h4 soll blinken */
+
+.shop-item h4 {
+    color: red;
+    font-size: 1.5rem;
+    text-align: right;
+    transform: scale(1.1);
+    animation: blink 1s infinite;
+    text-shadow: 4px 4px 4px rgba(126, 151, 0, 0.2);
+}
+
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
