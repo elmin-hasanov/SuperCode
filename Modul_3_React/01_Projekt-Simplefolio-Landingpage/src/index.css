@@ -1,0 +1,40 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #23283e;
+}
+
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  border: 1px solid #bdbddd;
+  background-color: #23283e;
+  color: #bdbddd;
+}
+
+p {
+  color: #a8a8c5;
+}
+
+a {
+  color: #bdbddd;
+  text-decoration: none;
+  padding: 10px;
+}
+
+h2 {
+  color: #bdbddd;
+}
+
+h4 {
+  color: #bdbddd;
+}
+
+h5 {
+  text-align: center;
+  color: #bdbddd;
+}
