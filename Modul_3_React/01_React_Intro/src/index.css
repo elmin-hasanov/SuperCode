@@ -1,0 +1,20 @@
+/* Hier kommen immer die Gloablen styles rein */
+
+img {
+  max-width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: red;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-color);
+}

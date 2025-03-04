@@ -1,0 +1,15 @@
+.hero h1 {
+    background-color: gray;
+    color: white;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero img {
+    border-radius: 30px;
+}
