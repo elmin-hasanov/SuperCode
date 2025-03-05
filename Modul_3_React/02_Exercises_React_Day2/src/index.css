@@ -1,0 +1,22 @@
+
+@font-face {
+  font-family: Kara;
+  src: url(../public/Karla.ttf);
+}
+
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Kara;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+hr {
+  margin: 40px 0px;
+}

@@ -1,0 +1,16 @@
+.produkte2 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    margin: 20px;
+    padding: 20px;
+
+    img {
+        width: 100%;
+    }
+
+    p {
+        line-height: 1px;
+    }
+}
