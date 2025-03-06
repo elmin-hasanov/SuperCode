@@ -19,7 +19,7 @@
 
 .secondsection {
   display: grid;
-  grid-template-columns: 0fr 2fr 0fr 2fr; /* Die erste Spalte ist jetzt 2 mal so breit wie die anderen */
+  grid-template-columns: 0fr 2fr 0fr 2fr;
   img {
     width: 20px;
   }
