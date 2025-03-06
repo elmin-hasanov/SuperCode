@@ -1,5 +1,4 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+.dark {
   background-color: #23283e;
 }
 
@@ -7,6 +6,12 @@
   margin: 10px;
   padding: 0;
   box-sizing: border-box;
+
+}
+
+html {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 button {
@@ -14,6 +19,10 @@ button {
   border: 1px solid #bdbddd;
   background-color: #23283e;
   color: #bdbddd;
+}
+
+button:hover {
+  background-color: #3a4266;
 }
 
 p {

@@ -1,14 +1,12 @@
 .parent {
     display: grid;
     margin: 0 auto;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(0, 1fr);
+    grid-template-rows: repeat(0, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    width: 500px;
-    height: 150px;
     text-align: center;
-    gap: 18px;
+    width: max-content;
     }
     
     .div1 { grid-area: 1 / 1 / 2 / 2; }
@@ -22,4 +20,26 @@
 
 .parent div {
     background-color: #2a2f4c;
+}
+
+.parent div:hover {
+    background-color: #363c62;
+}
+
+@media screen and (max-width: 517px) {
+    .parent {
+        margin: 0 auto;
+
+        .parent { 
+            display: grid; 
+          }
+            .div1 { grid-area: 1 / 1 / 2 / 2; }
+            .div2 { grid-area: 1 / 2 / 2 / 3; }
+            .div3 { grid-area: 2 / 1 / 3 / 2; }
+            .div4 { grid-area: 2 / 2 / 3 / 3; }
+            .div5 { grid-area: 3 / 1 / 4 / 2; }
+            .div6 { grid-area: 3 / 2 / 4 / 3; }
+            .div7 { grid-area: 4 / 1 / 5 / 2; }
+            .div8 { grid-area: 4 / 2 / 5 / 3; }    
+    }
 }
