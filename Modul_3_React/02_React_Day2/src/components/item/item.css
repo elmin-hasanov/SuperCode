@@ -1,0 +1,19 @@
+img {
+    max-width: 100px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    padding: 10px;
+    border-radius: 10px;
+    border: 0px solid rgb(0, 0, 0);
+    width: 200px;
+    margin: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.item:hover {
+    box-shadow: 0 1px 4px rgba(255, 35, 35, 0.8);
+}
