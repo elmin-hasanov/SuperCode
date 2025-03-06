@@ -3,6 +3,8 @@ import img from '../../assets/img/01-Books.png'
 import img2 from '../../assets/img/01-Home.png'
 import img3 from '../../assets/img/02-Lifestyle.png'
 import img4 from '../../assets/img/29-Lifestyle_b-o.png'
+import img5 from '../../assets/img/45-Home_hem.png'
+import img6 from '../../assets/img/46-Home_bm.png'
 import Shopitems from '../Shopitems/Shopitems'
 
 type produkst = {
@@ -31,6 +33,16 @@ const produktList: produkst[] = [
         img: img3,
         title: "Ucon Acrobatic Backpack",
         price: 79.00,
+    },
+    {
+        img: img5,
+        title: "Summer Print by BlaBla",
+        price: 27.00,
+    },
+    {
+        img: img6,
+        title: "Paolo Modular Coner Sofa",
+        price: 174.00,
     },
 ]
 

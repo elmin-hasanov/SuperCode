@@ -1,5 +1,9 @@
 .shopliste {
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Erste Reihe mit 4 Spalten */
+  gap: 20px; /* Abstand zwischen den Elementen */
+}
+
+.shopliste > *:nth-child(n + 5) {
+  grid-column: span 2; /* Ab dem 5. Element jeweils 2 Spalten einnehmen */
 }
