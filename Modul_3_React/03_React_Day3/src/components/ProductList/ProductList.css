@@ -1,0 +1,13 @@
+
+  section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .big-grid {
+    grid-column: span 2;
+  }
+  
+  .small-grid {
+    grid-column: span 1;
+  }
