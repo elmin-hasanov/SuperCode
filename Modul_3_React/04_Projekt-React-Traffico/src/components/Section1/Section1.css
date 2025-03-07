@@ -1,0 +1,56 @@
+.Section1 {
+  display: flex;
+  img {
+    width: 27vw;
+  }
+  width: 80vw;
+  padding: 0vw 10vw 0vw 10vw;
+}
+
+.SectionText1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2vw;
+  font-weight: 100;
+  h4 {
+    color: #ed4d47;
+    padding-bottom: 3vw;
+  }
+}
+
+.SectionText2 {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5vw;
+  div:nth-of-type(1) {
+    background-color: #ed4d47;
+    padding: 0.6vw;
+  }
+  div:nth-of-type(2) {
+    background-color: #fcddd4c7;
+    font-size: 1vw;
+    padding: 2vw;
+    font-weight: 500;
+  }
+}
+
+.Section2 {
+  display: flex;
+  img {
+    width: 24vw;
+  }
+  width: 80vw;
+  padding: 10vw 10vw 0vw 10vw;
+}
+
+.Section2Text {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2vw;
+  font-weight: 100;
+  padding-left: 10vw;
+  h4 {
+    color: #ed4d47;
+    padding-bottom: 3vw;
+  }
+}

@@ -1,0 +1,51 @@
+@font-face {
+  font-family: DMSerifDisplay;
+  src: url(../public/fonts/DMSerifDisplay-Regular.ttf);
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url(../public/fonts/Rubik-VariableFont_wght.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: Rubik;
+}
+
+a {
+  font-family: Rubik;
+  color: white;
+}
+
+h2 {
+  font-family: DMSerifDisplay;
+}
+
+h1 {
+  font-family: DMSerifDisplay;
+}
+
+h4 {
+  font-family: Rubik;
+  color: #ee4d47;
+}
+
+button {
+  font-family: Rubik;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1vw;
+  color: white;
+  background-color: #ee4d47;
+  width: 11vw;
+  height: 2.5vw;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+}
