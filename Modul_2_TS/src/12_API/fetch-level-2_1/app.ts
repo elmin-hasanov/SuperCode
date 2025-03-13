@@ -1,9 +1,5 @@
 type Picsum = {
-  id: string;
   author: string;
-  width: number;
-  height: number;
-  url: string;
   download_url: string;
 };
 
@@ -19,4 +15,5 @@ fetch("https://picsum.photos/v2/list")
       console.log(singleFact.author);
       output.innerHTML += `<div><div><img src="${singleFact.download_url}" alt="${singleFact.author}"></div><div><p>${singleFact.author}</p></div></div>`;
     });
-  });
+  })
+  .catch((err) => console.log(err));
