@@ -13,7 +13,11 @@ fetch("https://picsum.photos/v2/list")
     const datenArray = data;
     datenArray.forEach((singleFact: Picsum) => {
       console.log(singleFact.author);
-      output.innerHTML += `<div><div><img src="${singleFact.download_url}" alt="${singleFact.author}"></div><div><p>${singleFact.author}</p></div></div>`;
+      output.innerHTML += `
+      <figure>
+      <img src="${singleFact.download_url}">
+      <figcaption>${singleFact.author}</figcaption>
+      </figure>`;
     });
   })
   .catch((err) => console.log(err));
