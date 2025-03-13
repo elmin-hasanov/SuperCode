@@ -1,176 +1,228 @@
+/* Allgemeine Stile */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #fff;
+  min-height: 100vh;
+  line-height: 1.6;
 }
 
 main {
-    background-image: linear-gradient(to left bottom, #c6ccff, #bcc5ff, #b0beff, #a5b7ff, #98b0ff);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-p {
-    padding: 5px;
-}
-
-h1 {
-    font-size: 1.5rem;
-    padding: 10px;
-    color: #8c0000;
-}
-
-h2 {
-    font-size: 1.0rem;
-    padding: 10px;
-    color: #8c0000;
-}
-
-h3 {
-    font-size: 1.2rem;
-    padding: 10px;
-}
-
-.img {
-    font-size: 3rem;
-}
-
-html {
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-button {
-    padding: 10px 29px;
-    background-color: #8c0000;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #4e0000;
-}
-
-input {
-    padding: 10px 20px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    width: 400px;
-}
-
+/* Logo-Bereich */
 .logo {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  margin-bottom: 3rem;
+  animation: fadeIn 1s ease-in;
 }
 
+.logo h1 {
+  font-size: 3.5rem;
+  background: linear-gradient(45deg, #00b4d8, #90e0ef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 15px rgba(144, 224, 239, 0.3);
+}
+
+.logo h3 {
+  color: #7f8c8d;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+/* Suchleiste */
 .searchbar {
-    text-align: center;
-    padding: 5px 20px 20px;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
 }
 
+#searchInput {
+  width: 100%;
+  max-width: 600px;
+  padding: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#searchInput:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 20px rgba(0, 180, 216, 0.4);
+}
+
+/* Sortier-Buttons */
 .sort {
-    text-align: center;
-    padding: 0px 20px 40px;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
 }
 
+.sort button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 25px;
+  background: rgba(0, 180, 216, 0.15);
+  color: #90e0ef;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(144, 224, 239, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+.sort button:hover {
+  background: rgba(0, 180, 216, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 180, 216, 0.3);
+}
+
+/* Film-Karten */
 .movie-output {
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 1100px;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    opacity: 0;
-    animation: fadeIn 0.5s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  animation: slideUp 0.5s ease-out;
 }
 
 .movie {
-    border: 0px solid #ccc;
-    background-color: white;
-    width: 320px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 15px 40px 15px 20px;
-    background-color: #ffffff;
-    text-align: center;
-    padding: 10px;
-    transition: transform 0.3s ease-in-out;
-    background-image: linear-gradient(to bottom, #dde0fd, #dee1fe, #e0e1fe, #e1e2ff, #e2e2ff);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
 }
 
 .movie:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-.title {
+.movie:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  animation: shine 1.2s;
+}
+
+.movie .img {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.movie h2 {
+  color: #90e0ef;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  min-height: 3.5em;
+}
+
+.movie p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+
+.movie p:last-child {
+  color: #ffe066;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Animationen */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shine {
+  100% {
+    left: 200%;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .logo h1 {
+    font-size: 2.5rem;
+  }
+
+  .movie-output {
+    grid-template-columns: 1fr;
+  }
+
+  .sort {
+    flex-direction: column;
+  }
+
+  .sort button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 1rem;
+  }
+
+  #searchInput {
+    padding: 1rem;
+  }
+
+  .movie h2 {
     font-size: 1.2rem;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 15px;
-    margin: 10px;
-    background-color: bisque;
-}
-
-
-
-@media screen and (max-width: 430px) {
-    .movie-output {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    input {
-        border: 1px solid #ccc;
-        border-radius: 20px;
-        width: 100%;
-    }
-
-    .movie {
-        width: 100%;
-    }
-
-    button {
-        padding: 10px 20px;
-        margin-top: 20px;
-    }
-
-}
-
-@media screen and (max-width: 1040px) {
-    .movie-output {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .movie {
-        width: 100%;
-    }
-
-    input {
-        border: 1px solid #ccc;
-        border-radius: 20px;
-        width: 100%;
-    }
-
-    button {
-        padding: 10px 40px;
-        margin-top: 20px;
-    }
-
+  }
 }
