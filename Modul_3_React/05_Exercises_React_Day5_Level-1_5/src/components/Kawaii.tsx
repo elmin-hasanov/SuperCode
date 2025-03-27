@@ -24,7 +24,7 @@ export default function Kawaii() {
   };
   return (
     <div className="input">
-      <Chocolate size={240} mood={mood} color={bg} />
+      <Chocolate mood={mood} color={bg} />
       <button onClick={randomMood}>Random Color</button>
       <button onClick={randomColor}>Random Color</button>
     </div>
