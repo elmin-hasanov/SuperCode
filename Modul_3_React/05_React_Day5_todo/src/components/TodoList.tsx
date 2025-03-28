@@ -13,7 +13,7 @@ function TodoList(props: TodoListProps) {
     <ul>
       {todos.map((item) => (
         // hier wandeln wir unseren Array zu JSX um, so dass er dargestellt werden kann
-        <li>{item.title}</li>
+        <li key={item.id}>{item.title}</li>
       ))}
     </ul>
   );

@@ -1,4 +1,3 @@
-import "./App.css"
 import { useState } from "react"
 
 // exkurs destructuring bei arrays
@@ -17,7 +16,7 @@ import { useState } from "react"
 
 
 
-function App() {
+function Counter() {
 
   // ! änderungen normal initialisierter variablen lösen kein rerendering aus
   // ! => wenn wir count inkrementieren würden, würde React nicht wissen dass es auch die UI updaten soll
@@ -34,9 +33,31 @@ function App() {
   const handleClick = ()=>{
     console.log("Ich wurde geklickt")
     // setCount updated count und loest rerendering (also neue Ausführung der Komponente) aus
-    setCount(count+1)
-    // console.log(count)
+    console.log(count)
+    // setCount(count+1)
+    console.log(count)
+    // * Alternative Verwendungsmoeglichkeit von setState
+    // * Wichtig wenn der neue Wert vom alten Wert abhängt
+    setCount((oldCount)=>(oldCount + 1))
   }
+  // count === 0
+  // setCount(1) 
+  // setCount(1) 
+  // setCount(1) 
+  // setCount(1) 
+  // setCount(1) 
+
+  // count === 0 
+  // setCount((0)=>(0 + 1)) => 1
+  // setCount((1)=>(1 + 1)) => 2
+  // setCount((2)=>(oldCount + 1))
+  // setCount((oldCount)=>(oldCount + 1))
+  // setCount((oldCount)=>(oldCount + 1))
+
+
+
+
+
 
 
   return (
@@ -47,4 +68,4 @@ function App() {
 }
 
 
-export default App
+export default Counter

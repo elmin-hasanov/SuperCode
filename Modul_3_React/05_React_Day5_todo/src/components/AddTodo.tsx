@@ -1,13 +1,29 @@
 import { useState } from "react";
+import { ToDo } from "../App";
 
-const AddTodo = () => {
+
+type AddTodoProps = {
+  setTodos: React.Dispatch<React.SetStateAction<ToDo[]>>
+}
+
+
+const AddTodo = (props: AddTodoProps) => {
   // in diesem state wollen wir den aktuellen wert des inputs speichern, um auf diesen zugreifen zu können
   const [inputValue, setInputValue] = useState("");
 
   const handleSubmit: React.MouseEventHandler = (event) => {
     event.preventDefault();
-    console.log("Submitted:");
-    console.log(inputValue);
+
+    
+    const newTodo: ToDo = {
+     completed: false,
+     title: inputValue,
+     id: crypto.randomUUID()
+    }
+
+    // props.setTodos((oldTodos)=>oldTodos.concat(newTodo))
+    props.setTodos((oldTodos)=>[newTodo, ...oldTodos ])
+    // * mit dieser Schreibweise (anonyme Funktion) haben wir Zugriff auf die alten todos, so dass wir neue anhängen können 
   };
 
   /**
@@ -21,6 +37,7 @@ const AddTodo = () => {
     <form>
       <input
         type="text"
+        placeholder="Hier bitte dein ToDo"
         value={inputValue} // hier sorgen wir dafür, dass der input immer den aktuellen wert des states enthält
         onChange={(event) => {
           // event.target.value enthält den geänderten wert des inputs, und wird im State gespeichert
@@ -28,7 +45,7 @@ const AddTodo = () => {
         }}
       />
 
-      <button onClick={handleSubmit}>Add</button>
+      <button disabled={inputValue.length === 0} onClick={handleSubmit}>Add</button>
     </form>
   );
 };
