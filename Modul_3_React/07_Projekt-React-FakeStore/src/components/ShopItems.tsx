@@ -2,7 +2,7 @@ import { ShopProducts } from "../App";
 import "./ShopItems.css";
 
 type ShopItemsProps = {
-  shopProducts: ShopProducts[]; // Korrekt: Ein Array von ShopProducts
+  shopProducts: ShopProducts[];
 };
 
 export default function ShopItems({ shopProducts }: ShopItemsProps) {
