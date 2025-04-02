@@ -1,4 +1,4 @@
-import { Bird } from "@/App";
+import { Bird } from "@/types";
 
 type BirdCardProps = {
   bird: Bird;
