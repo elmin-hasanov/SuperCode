@@ -1,6 +1,7 @@
 import './Footer.css';
 import { Link } from 'react-router-dom';
 import footerimg from '../assets/img/Footer.png';
+import logo from '../assets/img/Logo.png';
 
 export default function Footer() {
   return (
@@ -9,7 +10,7 @@ export default function Footer() {
         <div className="line"></div>
         <div className="footer-container">
           <Link to="/" className="logo-container">
-            <img src="/src/assets/img/Logo.png" alt="logo" />
+            <img src={logo} alt="logo" />
             <h1>Woodies</h1>
           </Link>
           <p>(012) 8967453</p>
