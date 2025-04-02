@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Nunito';
+  src: url('/src/assets/fonts/Nunito.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Nunito, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+Link {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Modul_3_React/08_React-Router-Woodies/src/index.css */
