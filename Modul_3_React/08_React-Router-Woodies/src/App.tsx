@@ -14,8 +14,8 @@ import Footer from './components/Footer';
 import Products from './pages/Products';
 
 const Layout = () => {
-  const location = useLocation(); // Holt die aktuelle URL
-  const hideFooter = location.pathname === '/'; // Footer ausblenden, wenn auf Home-Seite
+  const location = useLocation();
+  const hideFooter = location.pathname === '/';
 
   return (
     <>
@@ -28,8 +28,7 @@ const Layout = () => {
         <Route path="/deon" element={<Deon />} />
         <Route path="/krisha" element={<Krisha />} />
       </Routes>
-      {!hideFooter && <Footer />}{' '}
-      {/* Footer nur rendern, wenn nicht auf Home */}
+      {!hideFooter && <Footer />}
     </>
   );
 };
