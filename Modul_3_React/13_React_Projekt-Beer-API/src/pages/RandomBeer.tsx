@@ -1,13 +1,19 @@
+// React Hooks und Router importieren
 import { useEffect, useState } from 'react';
 
+// Beer-Typ definieren (für TypeScript)
 import { Beer } from '../types/Beer';
 
+// Link-Komponente für Navigation importieren
 import { Link } from 'react-router-dom';
 
+// Navbar-Komponente importieren
 import Navbar from '../components/Navbar';
 
+//  Bilder importieren
 import backIcon from '../assets/img/Back.svg';
 
+// CSS-Datei importieren
 import './RandomBeer.css';
 
 // Zufälliges Bier anzeigen
