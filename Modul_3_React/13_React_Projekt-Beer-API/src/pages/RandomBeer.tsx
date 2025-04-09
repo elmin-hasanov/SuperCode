@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 import Navbar from '../components/Navbar';
 
-import backsvg from '../assets/img/back.svg';
+import backIcon from '../assets/img/Back.svg';
 
 import './RandomBeer.css';
 
@@ -47,7 +47,7 @@ const RandomBeer = () => {
       <p>Created by: {beer.contributed_by.slice(0, 10)}</p>
 
       <Link to="/beers">
-        <img src={backsvg} alt="Back" />
+        <img src={backIcon} alt="Back" />
       </Link>
 
       {/* Navigationsleiste Unten*/}

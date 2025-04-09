@@ -6,7 +6,7 @@ import { Beer } from '../types/Beer';
 
 import Navbar from '../components/Navbar';
 
-import backsvg from '../assets/img/back.svg';
+import backIcon from '../assets/img/Back.svg';
 
 // Detailansicht für ein einzelnes Bier
 const BeerDetail = () => {
@@ -48,7 +48,7 @@ const BeerDetail = () => {
       <p>Created by: {beer.contributed_by.slice(0, 10)}</p>
 
       <Link to="/beers">
-        <img src={backsvg} alt="Back" />
+        <img src={backIcon} alt="Back" />
       </Link>
 
       {/* Navigationsleiste unten */}
