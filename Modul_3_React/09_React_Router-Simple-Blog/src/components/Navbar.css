@@ -6,7 +6,6 @@
   padding: 2.22vw 6.67vw;
   position: fixed;
   width: 100%;
-
   top: 0;
   div {
     display: flex;
@@ -47,4 +46,16 @@
 
 .navbar--hidden {
   transform: translateY(-100%);
+}
+
+.active {
+  color: #ff0000;
+}
+
+.inactive {
+  color: #868686;
+}
+
+.inactive:hover {
+  color: #013918;
 }

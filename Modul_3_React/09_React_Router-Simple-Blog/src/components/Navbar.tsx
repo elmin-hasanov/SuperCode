@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 export default function Navbar() {
@@ -33,8 +33,18 @@ export default function Navbar() {
     >
       <h1>My Life</h1>
       <div>
-        <Link to="/">Home</Link>
-        <Link to="/blog">Blog</Link>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/blog"
+          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+        >
+          Blog
+        </NavLink>
       </div>
     </nav>
   );

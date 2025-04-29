@@ -3,23 +3,33 @@ import {
   Link,
   Outlet,
   RouterProvider,
-} from "react-router";
+} from 'react-router';
 
-import AboutPage from "./pages/AboutPage";
-import OverviewPage from "./pages/OverviewPage";
+import AboutPage from './pages/AboutPage';
+import OverviewPage from './pages/OverviewPage';
+import SingleBirdPage from './pages/SingleBirdPage';
 
 const router = createBrowserRouter([
+  // hier wrappen wir eine Layout Komponente um die eigentlichen Routen herum.
+  // das Layout soll auf jeder Seite genutzt werden, daher geben wir keinen path an
   {
     Component: Layout,
     children: [
-      { path: "/", Component: OverviewPage },
-      { path: "/about", Component: AboutPage },
+      { path: '/', Component: OverviewPage },
+      { path: '/about', Component: AboutPage },
+      { path: '/birds/:name', Component: SingleBirdPage },
       // ! wenn wir element nutzen, muss die Komponente aufgerufen werden
       // ! d.h., < /> außenrum
       // {path: "/about", element: <AboutPage/>}
     ],
   },
 ]);
+
+// ohne die Layout-Komponente, wuerden unsere Routen so aussehen:
+// const router = createBrowserRouter([
+//   { path: "/", Component: OverviewPage },
+//   { path: "/about", Component: AboutPage },
+// ]);
 
 function Layout() {
   return (
@@ -33,6 +43,7 @@ function Layout() {
         </Link>
       </header>
 
+      {/* Mit Outlet markieren wir die Stelle im Layout an der der Inhalt, also die Unterrouten, angezeigt werden soll */}
       <Outlet />
 
       <footer>Footer</footer>

@@ -1,0 +1,15 @@
+{
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic",
+          "foreground": "#A0A0A0"
+        }
+      }
+    ]
+  },
+  "codeium.enableExplainProblem": true,
+  "codeium.enableCodeLens": true
+}
